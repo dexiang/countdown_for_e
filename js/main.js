@@ -56,7 +56,7 @@ $(window).load(function(){
 
 
 $('#countdown').countdown(
-	"2019/07/15 18:00:00"
+	"2019/07/22 18:00:00"
 	// "2019/07/04 13:54:30"
 )
 .on('update.countdown', function(data) {
