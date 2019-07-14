@@ -1123,16 +1123,14 @@ h2 {
 	right: 0;
 	background: rgba(0, 0, 0, 0.7);
 	transition: opacity 500ms;
-	visibility: visible;
-	opacity: 1;
-}
-.overlay:target {
+
 	visibility: hidden;
 	opacity: 0;
+	animation: alert-popup 10s;
 }
 
 .popup {
-	margin: 70px auto;
+	margin: 150px auto;
 	padding: 20px;
 	background: #fff;
 	border-radius: 5px;
@@ -1163,4 +1161,16 @@ h2 {
 	margin-top: 10px;
 	max-height: 30%;
 	overflow: auto;
+}
+
+@keyframes alert-popup {
+	0% {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	80% {
+		visibility: visible;
+		opacity: 1;
+	}
 }
