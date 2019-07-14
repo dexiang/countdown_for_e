@@ -1126,10 +1126,10 @@ h2 {
 	visibility: visible;
 	opacity: 1;
 }
-/*.overlay:target {*/
-	/*visibility: visible;*/
-	/*opacity: 1;*/
-/*}*/
+.overlay:target {
+	visibility: hidden;
+	opacity: 0;
+}
 
 .popup {
 	margin: 70px auto;
