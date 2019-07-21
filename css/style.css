@@ -1115,9 +1115,9 @@ h2 {
 	}
 }
 
-/*.trtreasure-tips .btn {*/
-	/*background-color: transparent;*/
-/*}*/
+.trtreasure-tips .btn {
+	border-width: 3px;
+}
 
 /*.overlay {*/
 	/*position: fixed;*/
