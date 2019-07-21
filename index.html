@@ -18,11 +18,12 @@
         <link href="favicon.ico" rel="shortcut icon" type="image/png">
 
         <!--[if lt IE 9]>
-            <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+            <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
 
         <!-- CSS -->
-        <link href='//fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'><!-- Styles -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,900' rel='stylesheet' type='text/css'><!-- Styles -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="css/loader.css" rel="stylesheet" type="text/css">
         <link href="css/normalize.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -30,9 +31,10 @@
         <!--[if lt IE 9]>
             <link rel="stylesheet" type="text/css" href="css/ie.css" />
         <![endif]-->
-        <!-- Javascript -->
 
+        <!-- Javascript -->
         <script src="js/jquery.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="preloader">
@@ -75,15 +77,7 @@
                     </div>
                 </li>
 
-                <li class="layer" data-depth="0.30">
-                    <div class="hero">
-                        <h1 id="countdown"></h1>
 
-                        <p class="sub-title" id="countdown_tips">
-                            Please look forward to your present!
-                        </p>
-                    </div>
-                </li>
                 <!-- Flakes -->
 
                 <li class="layer" data-depth="0.40">
@@ -163,17 +157,57 @@
                         By <a href="https://www.dexiang.me/" target="_blank">Anthony</a> @ WeAcademy
                     </div>
                 </li>
+
+                <li class="layer" data-depth="0.30">
+                    <div class="hero">
+
+                        <h1 id="countdown"></h1>
+
+                        <div class="trtreasure-tips">
+                            <!--<a class="button treasure-button" href="#treasure-map-popup">View Treasure Map</a>-->
+                            <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#treasure-map-modal">
+                                View Treasure Map
+                            </button>
+
+                        </div>
+
+                        <p class="sub-title" id="countdown_tips">
+                            Please look forward to your present!
+                        </p>
+                    </div>
+                </li>
             </ul>
         </div>
 
-        <div id="popup1" class="overlay">
-            <div class="popup">
-                <h2>You are hit by magic !!!</h2>
-                <div class="content">
-                    Magic effect: delayed one week
+        <div class="modal fade" id="treasure-map-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Find the person who is not in the position</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="images/treasure-map.jpg">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!--<div id="treasure-map-popup" class="overlay">-->
+            <!--<div class="popup">-->
+                <!--<h2>This is your treasure map</h2>-->
+                <!--<a class="close" href="#">&times;</a>-->
+                <!--<div class="content">-->
+                    <!--<img src="images/treasure-map.jpg">-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
 
         <!-- Javascript -->
         <script src="js/plugins.js"></script>

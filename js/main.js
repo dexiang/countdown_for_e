@@ -83,8 +83,8 @@ $('#countdown').countdown(
 
 	$(this).empty()
 		.append("<div>" + '0' + " <span>1st</span></div>")
-	    .append("<div>" + '0' + " <span>2nd</span></div>")
-	    .append("<div>" + '0' + " <span>3rd</span></div>")
+	    .append("<div>" + '4' + " <span>2nd</span></div>")
+	    .append("<div>" + '3' + " <span>3rd</span></div>")
 	    .append("<div>" + '0' + " <span>4th</span></div>");
 
 	$('#countdown_tips').text('Please use this password to open your box!!');
